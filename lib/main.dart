@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
-import 'dart:math';
+import 'resultado.dart';
 
 void main() {
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
+    initialRoute: '/home',
+    routes: {
+      '/home': (context) => HomePage(),
+      '/resultado': (context) => ResultadoPage(),
+    },
   ));
 }
